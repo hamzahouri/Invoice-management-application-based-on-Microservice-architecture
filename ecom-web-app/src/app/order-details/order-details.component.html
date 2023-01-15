@@ -1,0 +1,37 @@
+<div class="container" *ngIf="ordersDetails">
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">Order Id : {{orderId}}</div>
+  <div class="card-body text-sm-start">
+    <ul class="list-group">
+      <li class="list-group-item">order id : {{ordersDetails.id}}</li>
+      <li class="list-group-item">Customer id : {{ordersDetails.customers.id}}</li>
+      <li class="list-group-item">Customer name : {{ordersDetails.customers.name}}</li>
+      <li class="list-group-item">Customer email: {{ordersDetails.customers.email}}</li>
+
+    </ul>
+  </div>
+</div>
+</div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header">Product items</div>
+      <div class="card-body"></div>
+      <table class="table">
+       <thead>
+       <tr>
+         <th>Product id</th><th>Product name</th><th>Quantity</th><th>Price</th>
+       </tr>
+       </thead>
+        <tbody>
+        <tr *ngFor="let p of ordersDetails."></tr>
+        <td>{{p.products.id}}</td>
+        <td>{{p.products.name}}</td>
+        <td>{{p.products.price}}</td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
